@@ -29,16 +29,6 @@ public class ViewBean implements Serializable {
     public ViewBean() {
     }
     
-    private boolean showAllColumns = false;
-
-    public boolean isShowAllColumns() {
-        return showAllColumns;
-    }
-
-    public void setShowAllColumns(boolean showAllColumns) {
-        this.showAllColumns = showAllColumns;
-    }
-    
     private FakeQuery query = new FakeQuery();
     
     private List<FakeEntity> entities;
@@ -114,4 +104,17 @@ public class ViewBean implements Serializable {
         }
         return out;
     }
+    
+    
+    private boolean showAllColumns = false;
+
+    public boolean isShowAllColumns() {
+        return showAllColumns;
+    }
+
+    public void setShowAllColumns(boolean showAllColumns) {
+        this.showAllColumns = showAllColumns;
+    }
+    
+    
 }
